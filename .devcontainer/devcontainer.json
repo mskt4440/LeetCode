@@ -1,0 +1,24 @@
+{
+	"name": "Python3",
+	"context": "..",
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/sh",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+		"python.linting.flake8Path": "/usr/local//bin/flake8",
+		"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
+		"python.testing.pytestPath": "/usr/local/bin/pytest",
+		"python.analysis.typeCheckingMode": "strict"
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance"
+	],
+	"forwardPorts": [
+		9000
+	],
+	"postCreateCommand": "pip install -r requirements.txt"
+}
