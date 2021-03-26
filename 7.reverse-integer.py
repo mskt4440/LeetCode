@@ -1,26 +1,10 @@
 #
-# 7. Reverse Integer
+# @lc app=leetcode id=7 lang=python
 #
-import unittest
+# [7] Reverse Integer
+#
 
-
-class TestClass(unittest.TestCase):
-    def setUp(self):
-        self.s = Solution()
-
-    def test_1(self):
-        self.assertEqual(self.s.reverse(123), 321)
-
-    def test_2(self):
-        self.assertEqual(self.s.reverse(-123), -321)
-
-    def test_3(self):
-        self.assertEqual(self.s.reverse(120), 21)
-
-    def test_4(self):
-        self.assertEqual(self.s.reverse(0), 0)
-
-
+# @lc code=start
 class Solution(object):
     def reverse(self, x):
         """
@@ -50,7 +34,4 @@ class Solution(object):
             r -= t
 
         return s*ans
-
-
-if __name__ == "__main__":
-    unittest.main()
+# @lc code=end

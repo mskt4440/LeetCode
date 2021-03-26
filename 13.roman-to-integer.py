@@ -1,29 +1,10 @@
 #
-# 13. Roman to Integer
+# @lc app=leetcode id=13 lang=python
 #
-import unittest
+# [13] Roman to Integer
+#
 
-
-class TestClass(unittest.TestCase):
-    def setUp(self):
-        self.s = Solution()
-
-    def test_1(self):
-        self.assertEqual(self.s.romanToInt("III"), 3)
-
-    def test_2(self):
-        self.assertEqual(self.s.romanToInt("IV"), 4)
-
-    def test_3(self):
-        self.assertEqual(self.s.romanToInt("IX"), 9)
-
-    def test_4(self):
-        self.assertEqual(self.s.romanToInt("LVIII"), 58)
-
-    def test_5(self):
-        self.assertEqual(self.s.romanToInt("MCMXCIV"), 1994)
-
-
+# @lc code=start
 class Solution(object):
     def romanToInt(self, s):
         """
@@ -64,7 +45,4 @@ class Solution(object):
                 ans += 1
 
         return ans
-
-
-if __name__ == "__main__":
-    unittest.main()
+# @lc code=end
